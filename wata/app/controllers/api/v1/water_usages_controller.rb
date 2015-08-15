@@ -1,33 +1,23 @@
 module Api
   module V1
     class WaterUsagesController < ApplicationController
-
       def index
-        @users = User.all
+        @water = WaterUsage.all
       end
-
       def show
-
+        @water = WaterUsage.find(params[:id])
       end
-
-      def new
-
-      end
-
-      def edit
-
-      end
-
       def create
-
+        @water = WaterUsage.create(water_params)
+        if @water.save
+          render json: @water
+        else
+          render json: "bad request", status: 422
+        end
       end
-
-      def update
-
-      end
-
-      def destroy
-
+      private
+      def water_params
+        params.require(:water_usage).permit(:moisture, :longitude, :latitude, :moisture_float)
       end
     end
   end
