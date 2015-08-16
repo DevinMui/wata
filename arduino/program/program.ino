@@ -39,7 +39,7 @@ void setup() {
     client.println("Connection: close");
     client.println();
   } else {
-    Serial.println("FUCK");
+    Serial.println("Failed to connect");
   }
 }
 
