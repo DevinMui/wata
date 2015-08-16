@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+	<title>Long polling water sensor server API</title>
+</head>
+<body>
+<h1 id="poll">Nothing yet</h1>
+<h3 id="poll_val">Level: 0</h3>
+<script src="./jquery.min.js"></script>
+<!--<script>
+(function poll() {
+   setTimeout(function() {
+   		//https://intense-shore-4027.herokuapp.com/api/v1/water_usage
+      $.ajax({ url: "http://localhost:3000/api/v1/water_usages", type: "GET", success: function(data) {
+        $('#poll').val('Oh no! Your plants are dry!');
+				$('#poll_val').val("Level: " + data.value);
+				console.log("SUCCESS");
+      }, error: function(data) {
+      	console.log("FAILED")
+      }, dataType: "json", complete: poll });
+    }, 5000);
+})();
+</script>-->
+<script>
+	url = "http://localhost:3000/api/v1/water_usages";
+	$.get(url, function(data){
+		console.log(data);
+	}).fail(function(data){
+		console.log("fail" + data)
+	});
+
+	$.getJSON(url, function(data){
+		console.log(data);
+	}).fail(function(data){
+		console.log("fail" + data);
+	});
+
+	$.ajax({ url: url, accepts: "application/json", success: function(data){
+			console.log(data);
+		}
+	});
+</script>
+</body>
+</html>

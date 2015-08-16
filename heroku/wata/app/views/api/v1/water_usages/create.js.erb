@@ -1,0 +1,12 @@
+alert("done");
+<% broadcast "/water_usages/" do %>
+	<% if @water.moisture <= 100 && @water.moisture >= 0 %>
+		$("#note").html("<%= j 'Oh no! Your plants are dry at a ' + @water.moisture %> + ' moisture level' ");
+	<% elsif @water.moisture > 100 && @water.moisture <= 400 %>
+		$("#note").html("<%= j 'Your plants are fine at a ' + @water.moisture + ' moisture level' %>");
+	<% elsif @water.moisture > 400 && @water.moisture < 1024 %>
+			$("#note").html("<%= j 'Ummm... you may be drowning your plants now at a ' + @water.moisture + ' moisture level' %>");
+	<% else %>
+		  $("#note").html("<%= j 'Your sensors may be broken' %>");
+	<% end %>
+<% end %>
