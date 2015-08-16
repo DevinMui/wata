@@ -223,7 +223,7 @@
 				TargetAttributes = {
 					02854EBB1B7FEB01004D8854 = {
 						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = H598HBDDJ8;
+						DevelopmentTeam = LJ32KZVZ54;
 						SystemCapabilities = {
 							com.apple.Maps.iOS = {
 								enabled = 0;
@@ -484,6 +484,7 @@
 			baseConfigurationReference = F254BF2214285D4370EBDD6E /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -492,7 +493,7 @@
 				INFOPLIST_FILE = wataios/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jesseliang.wataios;
+				PRODUCT_BUNDLE_IDENTIFIER = com.devinmui.wataios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -502,6 +503,7 @@
 			baseConfigurationReference = 212B2B1DDE4812C7419174BD /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -510,7 +512,7 @@
 				INFOPLIST_FILE = wataios/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jesseliang.wataios;
+				PRODUCT_BUNDLE_IDENTIFIER = com.devinmui.wataios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
