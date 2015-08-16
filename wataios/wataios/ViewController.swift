@@ -16,7 +16,14 @@ class ViewController: UIViewController ,NSURLConnectionDelegate{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let urlString = "http://intense-shore-4027.herokuapp.com/api/v1/water_usages"
+        
+        var localNotification: UILocalNotification = UILocalNotification()
+        localNotification.alertAction = "Testing notification on iOS8"
+        localNotification.alertBody = "Woww it works!!"
+        localNotification.fireDate = NSDate(timeIntervalSinceNow: 30)
+        UIApplication.sharedApplication().scheduleLocalNotification(localNotification)
+        
+        let urlString = "http://intense-shore-4027.herokuapp.com/api/v1/water_usage"
         
         if let url = NSURL(string: urlString) {
             if let data = NSData(contentsOfURL: url) {
