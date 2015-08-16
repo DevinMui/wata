@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8173.3" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="DXk-LJ-gzF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8173.3" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="uAn-Mx-eU4">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8142"/>
@@ -12,22 +12,12 @@
                     <view key="view" contentMode="scaleToFill" id="vpC-KF-lZs">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="MeM-Rt-2ai">
-                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </mapView>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Map" id="u0h-R8-Ili"/>
                     <navigationItem key="navigationItem" id="BsU-mA-guV"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
-                    <connections>
-                        <outlet property="mapView" destination="MeM-Rt-2ai" id="TWm-dS-hq7"/>
-                        <segue destination="Eb0-Pn-hx3" kind="push" identifier="tabOneToTabTwo" id="Jxg-eh-QFg"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tl0-j5-NDv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -36,6 +26,7 @@
         <!--tableTab-->
         <scene sceneID="ZTj-E9-mCk">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jKl-CF-ajE" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController restorationIdentifier="tableTab" storyboardIdentifier="tableTab" title="tableTab" id="Eb0-Pn-hx3" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="tabletab" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="klC-gK-DMX" userLabel="tableView">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
@@ -64,33 +55,8 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </refreshControl>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jKl-CF-ajE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3427" y="-568"/>
         </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="9yn-cW-osb">
-            <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="DXk-LJ-gzF" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <nil key="simulatedBottomBarMetrics"/>
-                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="zY6-ft-LCI">
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="uAn-Mx-eU4" kind="relationship" relationship="viewControllers" id="6hu-xd-Pdy"/>
-                        <segue destination="Eb0-Pn-hx3" kind="relationship" relationship="viewControllers" id="GYN-Y1-2v8"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="FtJ-8c-xeg" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2231" y="-568"/>
-        </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="Jxg-eh-QFg"/>
-    </inferredMetricsTieBreakers>
 </document>

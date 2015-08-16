@@ -3,9 +3,11 @@ module Api
     class WaterUsagesController < ApplicationController
       def index
         @water = WaterUsage.all
+        render json: @water
       end
       def show
         @water = WaterUsage.find(params[:id])
+        render json: @water
       end
       def create
         @water = WaterUsage.create(water_params)
