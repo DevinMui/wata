@@ -27,14 +27,14 @@ class ViewController: UIViewController ,NSURLConnectionDelegate{
                 }
             }
         }
-        let camera = GMSCameraPosition.cameraWithLatitude(37.7749295,
-            longitude: -122.41941550000001, zoom: 6)
+        let camera = GMSCameraPosition.cameraWithLatitude(37.790882,
+            longitude: -122.401552, zoom: 6)
         let mapView = GMSMapView.mapWithFrame(CGRectZero, camera: camera)
         mapView.myLocationEnabled = true
         self.view = mapView
         
         let marker = GMSMarker()
-        marker.position = CLLocationCoordinate2DMake(37.7749295, -122.41941550000001)
+        marker.position = CLLocationCoordinate2DMake(37.790882, -122.401552)
         marker.title = "San Francisco"
         marker.snippet = "United States"
         marker.map = mapView
