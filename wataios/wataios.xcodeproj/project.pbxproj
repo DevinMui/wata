@@ -1,0 +1,580 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02854EC01B7FEB01004D8854 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02854EBF1B7FEB01004D8854 /* AppDelegate.swift */; };
+		02854EC21B7FEB01004D8854 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02854EC11B7FEB01004D8854 /* ViewController.swift */; };
+		02854EC51B7FEB01004D8854 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02854EC31B7FEB01004D8854 /* Main.storyboard */; };
+		02854EC71B7FEB01004D8854 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02854EC61B7FEB01004D8854 /* Assets.xcassets */; };
+		02854ECA1B7FEB01004D8854 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02854EC81B7FEB01004D8854 /* LaunchScreen.storyboard */; };
+		02854ED51B7FEB01004D8854 /* wataiosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02854ED41B7FEB01004D8854 /* wataiosTests.swift */; };
+		02854EE01B7FEB01004D8854 /* wataiosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02854EDF1B7FEB01004D8854 /* wataiosUITests.swift */; };
+		43560CB3DA5ECECE26B5E6A3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 26F5FFB7449D6F40B24CC82A /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		02854ED11B7FEB01004D8854 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 02854EB41B7FEB01004D8854 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 02854EBB1B7FEB01004D8854;
+			remoteInfo = wataios;
+		};
+		02854EDC1B7FEB01004D8854 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 02854EB41B7FEB01004D8854 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 02854EBB1B7FEB01004D8854;
+			remoteInfo = wataios;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02854EBC1B7FEB01004D8854 /* wataios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wataios.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		02854EBF1B7FEB01004D8854 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		02854EC11B7FEB01004D8854 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		02854EC41B7FEB01004D8854 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		02854EC61B7FEB01004D8854 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		02854EC91B7FEB01004D8854 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		02854ECB1B7FEB01004D8854 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02854ED01B7FEB01004D8854 /* wataiosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wataiosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		02854ED41B7FEB01004D8854 /* wataiosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wataiosTests.swift; sourceTree = "<group>"; };
+		02854ED61B7FEB01004D8854 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02854EDB1B7FEB01004D8854 /* wataiosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wataiosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		02854EDF1B7FEB01004D8854 /* wataiosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wataiosUITests.swift; sourceTree = "<group>"; };
+		02854EE11B7FEB01004D8854 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		212B2B1DDE4812C7419174BD /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		26F5FFB7449D6F40B24CC82A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F254BF2214285D4370EBDD6E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		02854EB91B7FEB01004D8854 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43560CB3DA5ECECE26B5E6A3 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02854ECD1B7FEB01004D8854 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02854ED81B7FEB01004D8854 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02854EB31B7FEB01004D8854 = {
+			isa = PBXGroup;
+			children = (
+				02854EBE1B7FEB01004D8854 /* wataios */,
+				02854ED31B7FEB01004D8854 /* wataiosTests */,
+				02854EDE1B7FEB01004D8854 /* wataiosUITests */,
+				02854EBD1B7FEB01004D8854 /* Products */,
+				1BAE572D952456A77BA2092F /* Pods */,
+				A423F5DF8130500355CC2C8C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		02854EBD1B7FEB01004D8854 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				02854EBC1B7FEB01004D8854 /* wataios.app */,
+				02854ED01B7FEB01004D8854 /* wataiosTests.xctest */,
+				02854EDB1B7FEB01004D8854 /* wataiosUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		02854EBE1B7FEB01004D8854 /* wataios */ = {
+			isa = PBXGroup;
+			children = (
+				02854EBF1B7FEB01004D8854 /* AppDelegate.swift */,
+				02854EC11B7FEB01004D8854 /* ViewController.swift */,
+				02854EC31B7FEB01004D8854 /* Main.storyboard */,
+				02854EC61B7FEB01004D8854 /* Assets.xcassets */,
+				02854EC81B7FEB01004D8854 /* LaunchScreen.storyboard */,
+				02854ECB1B7FEB01004D8854 /* Info.plist */,
+			);
+			path = wataios;
+			sourceTree = "<group>";
+		};
+		02854ED31B7FEB01004D8854 /* wataiosTests */ = {
+			isa = PBXGroup;
+			children = (
+				02854ED41B7FEB01004D8854 /* wataiosTests.swift */,
+				02854ED61B7FEB01004D8854 /* Info.plist */,
+			);
+			path = wataiosTests;
+			sourceTree = "<group>";
+		};
+		02854EDE1B7FEB01004D8854 /* wataiosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				02854EDF1B7FEB01004D8854 /* wataiosUITests.swift */,
+				02854EE11B7FEB01004D8854 /* Info.plist */,
+			);
+			path = wataiosUITests;
+			sourceTree = "<group>";
+		};
+		1BAE572D952456A77BA2092F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F254BF2214285D4370EBDD6E /* Pods.debug.xcconfig */,
+				212B2B1DDE4812C7419174BD /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A423F5DF8130500355CC2C8C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				26F5FFB7449D6F40B24CC82A /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		02854EBB1B7FEB01004D8854 /* wataios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02854EE41B7FEB01004D8854 /* Build configuration list for PBXNativeTarget "wataios" */;
+			buildPhases = (
+				F90A76B372F7AFA902DBEF9D /* Check Pods Manifest.lock */,
+				02854EB81B7FEB01004D8854 /* Sources */,
+				02854EB91B7FEB01004D8854 /* Frameworks */,
+				02854EBA1B7FEB01004D8854 /* Resources */,
+				626F7C3319E93EF69A89FB7C /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = wataios;
+			productName = wataios;
+			productReference = 02854EBC1B7FEB01004D8854 /* wataios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		02854ECF1B7FEB01004D8854 /* wataiosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02854EE71B7FEB01004D8854 /* Build configuration list for PBXNativeTarget "wataiosTests" */;
+			buildPhases = (
+				02854ECC1B7FEB01004D8854 /* Sources */,
+				02854ECD1B7FEB01004D8854 /* Frameworks */,
+				02854ECE1B7FEB01004D8854 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				02854ED21B7FEB01004D8854 /* PBXTargetDependency */,
+			);
+			name = wataiosTests;
+			productName = wataiosTests;
+			productReference = 02854ED01B7FEB01004D8854 /* wataiosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		02854EDA1B7FEB01004D8854 /* wataiosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02854EEA1B7FEB01004D8854 /* Build configuration list for PBXNativeTarget "wataiosUITests" */;
+			buildPhases = (
+				02854ED71B7FEB01004D8854 /* Sources */,
+				02854ED81B7FEB01004D8854 /* Frameworks */,
+				02854ED91B7FEB01004D8854 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				02854EDD1B7FEB01004D8854 /* PBXTargetDependency */,
+			);
+			name = wataiosUITests;
+			productName = wataiosUITests;
+			productReference = 02854EDB1B7FEB01004D8854 /* wataiosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		02854EB41B7FEB01004D8854 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Jesse Liang";
+				TargetAttributes = {
+					02854EBB1B7FEB01004D8854 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = H598HBDDJ8;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
+					};
+					02854ECF1B7FEB01004D8854 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = H598HBDDJ8;
+						TestTargetID = 02854EBB1B7FEB01004D8854;
+					};
+					02854EDA1B7FEB01004D8854 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = H598HBDDJ8;
+						TestTargetID = 02854EBB1B7FEB01004D8854;
+					};
+				};
+			};
+			buildConfigurationList = 02854EB71B7FEB01004D8854 /* Build configuration list for PBXProject "wataios" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 02854EB31B7FEB01004D8854;
+			productRefGroup = 02854EBD1B7FEB01004D8854 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				02854EBB1B7FEB01004D8854 /* wataios */,
+				02854ECF1B7FEB01004D8854 /* wataiosTests */,
+				02854EDA1B7FEB01004D8854 /* wataiosUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		02854EBA1B7FEB01004D8854 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02854ECA1B7FEB01004D8854 /* LaunchScreen.storyboard in Resources */,
+				02854EC71B7FEB01004D8854 /* Assets.xcassets in Resources */,
+				02854EC51B7FEB01004D8854 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02854ECE1B7FEB01004D8854 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02854ED91B7FEB01004D8854 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		626F7C3319E93EF69A89FB7C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F90A76B372F7AFA902DBEF9D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		02854EB81B7FEB01004D8854 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02854EC21B7FEB01004D8854 /* ViewController.swift in Sources */,
+				02854EC01B7FEB01004D8854 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02854ECC1B7FEB01004D8854 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02854ED51B7FEB01004D8854 /* wataiosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02854ED71B7FEB01004D8854 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02854EE01B7FEB01004D8854 /* wataiosUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		02854ED21B7FEB01004D8854 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 02854EBB1B7FEB01004D8854 /* wataios */;
+			targetProxy = 02854ED11B7FEB01004D8854 /* PBXContainerItemProxy */;
+		};
+		02854EDD1B7FEB01004D8854 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 02854EBB1B7FEB01004D8854 /* wataios */;
+			targetProxy = 02854EDC1B7FEB01004D8854 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		02854EC31B7FEB01004D8854 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				02854EC41B7FEB01004D8854 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		02854EC81B7FEB01004D8854 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				02854EC91B7FEB01004D8854 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		02854EE21B7FEB01004D8854 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		02854EE31B7FEB01004D8854 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		02854EE51B7FEB01004D8854 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F254BF2214285D4370EBDD6E /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = wataios/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jesseliang.wataios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		02854EE61B7FEB01004D8854 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 212B2B1DDE4812C7419174BD /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = wataios/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jesseliang.wataios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		02854EE81B7FEB01004D8854 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = wataiosTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jesseliang.wataiosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/wataios.app/wataios";
+			};
+			name = Debug;
+		};
+		02854EE91B7FEB01004D8854 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = wataiosTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jesseliang.wataiosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/wataios.app/wataios";
+			};
+			name = Release;
+		};
+		02854EEB1B7FEB01004D8854 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = wataiosUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jesseliang.wataiosUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = wataios;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		02854EEC1B7FEB01004D8854 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = wataiosUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jesseliang.wataiosUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = wataios;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		02854EB71B7FEB01004D8854 /* Build configuration list for PBXProject "wataios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02854EE21B7FEB01004D8854 /* Debug */,
+				02854EE31B7FEB01004D8854 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02854EE41B7FEB01004D8854 /* Build configuration list for PBXNativeTarget "wataios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02854EE51B7FEB01004D8854 /* Debug */,
+				02854EE61B7FEB01004D8854 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02854EE71B7FEB01004D8854 /* Build configuration list for PBXNativeTarget "wataiosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02854EE81B7FEB01004D8854 /* Debug */,
+				02854EE91B7FEB01004D8854 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02854EEA1B7FEB01004D8854 /* Build configuration list for PBXNativeTarget "wataiosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02854EEB1B7FEB01004D8854 /* Debug */,
+				02854EEC1B7FEB01004D8854 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 02854EB41B7FEB01004D8854 /* Project object */;
+}
