@@ -11,10 +11,13 @@ module Api
       end
       def create
         @water = WaterUsage.create(water_params)
-        if @water.save
-          render json: @water
-        else
-          render json: "bad request", status: 422
+        respond_to do |format|
+          if @water.save
+            format.json { render json: @water }
+            format.js
+          else
+            render json: "bad request", status: 422
+          end
         end
       end
       private

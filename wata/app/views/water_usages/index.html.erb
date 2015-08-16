@@ -1,0 +1,14 @@
+<div class="back">
+	<div class="container">
+		<h1 class="text-center">Lata Wata Data</h1>
+		<div class="col-md-6">
+			<% @water.each do |water| %>
+				<h3 style="color:white"><%= water.id %>. Water Moisture Level: <%= water.moisture %></h3>
+			<% end %>
+		</div>
+		<div class="col-md-6">
+			<%= image_tag("wata.jpg", class: "img-responsive img-circle")%>
+			<p>Wata is an Internet of Things hack built at the Water/Energy Nexus Hackathon which uses an Arduino, Ethernet shield, and homemade water moisture sensor to detect water moisture in the farming land. </p>
+		</div>
+	</div>
+</div>

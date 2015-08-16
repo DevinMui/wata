@@ -4,4 +4,6 @@ Rails.application.routes.draw do
       resources :water_usages
     end
   end
+  resources :water_usages
+  root 'water_usages#index'
 end

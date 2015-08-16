@@ -15,3 +15,4 @@ def create_data(moisture):
 while True:
 	data = int(ser.readline())
 	create_data(data)
+	print "Moisture: " + data
