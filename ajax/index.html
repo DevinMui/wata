@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+	<title>Long polling water sensor server API</title>
+</head>
+<body>
+<h1 id="poll">Nothing yet</h1>
+<h3 id="poll_val">Level: 0</h3>
+<script src="./jquery.min.js"></script>
+<script>(function poll() {
+   setTimeout(function() {
+       $.ajax({ url: "http://192.168.1.122:3000/api/v1/water_usages/", success: function(data) {
+        $('#poll').val('Oh no! Your plants are dry!');
+	$('#poll_val').val("Level: " + data.value);
+       }, dataType: "json", complete: poll });
+    }, 30000);
+})();</script>
+</body>
+</html>
