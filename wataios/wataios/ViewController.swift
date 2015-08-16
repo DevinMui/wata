@@ -8,6 +8,7 @@
 
 import UIKit
 import GoogleMaps
+import SwiftyJSON
 
 class ViewController: UIViewController ,NSURLConnectionDelegate{
     
@@ -15,7 +16,17 @@ class ViewController: UIViewController ,NSURLConnectionDelegate{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let urlString = "http://intense-shore-4027.herokuapp.com/api/v1/water_usages"
         
+        if let url = NSURL(string: urlString) {
+            if let data = NSData(contentsOfURL: url) {
+                let json = JSON(data: data)
+                
+                if json["metadata"]["responseInfo"]["status"].intValue == 200 {
+                    // we're OK to parse!
+                }
+            }
+        }
         let camera = GMSCameraPosition.cameraWithLatitude(37.7749295,
             longitude: -122.41941550000001, zoom: 6)
         let mapView = GMSMapView.mapWithFrame(CGRectZero, camera: camera)
@@ -28,43 +39,26 @@ class ViewController: UIViewController ,NSURLConnectionDelegate{
         marker.snippet = "United States"
         marker.map = mapView
     }
-
-    override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(animated)
-        startConnection()
-    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
-    func startConnection(){
-        let urlPath: String = "http://192.168.1.122:3000/api/v1/"
-        let url: NSURL = NSURL(string: urlPath)!
-        let request: NSURLRequest = NSURLRequest(URL: url)
-        let connection: NSURLConnection = NSURLConnection(request: request, delegate: self, startImmediately: false)!
-        connection.start()
-    }
     
-    func connection(connection: NSURLConnection!, didReceiveData data: NSData!){
-        self.data.appendData(data)
-    }
-    
-    func buttonAction(sender: UIButton!){
-        startConnection()
-    }
-    
-    func connectionDidFinishLoading(connection: NSURLConnection!) {
-        //var err: NSError
-        // throwing an error on the line below (can't figure out where the error message is)
-        do {
-            let jsonResult: NSDictionary = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers) as! NSDictionary
-            print(jsonResult)
-        } catch let error as NSError {
-            print(error)
+    func parseJSON(json: JSON) {
+        //var objects = [String]()
+        for result in json.arrayValue {
+            let moisture = result["moisture"].stringValue
+            _ = ["moisture": moisture]
+            
+            //objects.append(obj)
         }
+        
+        //tableView.reloadData()
     }
-}
+        
+    }
+
 
 
     

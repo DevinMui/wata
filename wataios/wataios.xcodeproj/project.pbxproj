@@ -14,7 +14,8 @@
 		02854ECA1B7FEB01004D8854 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02854EC81B7FEB01004D8854 /* LaunchScreen.storyboard */; };
 		02854ED51B7FEB01004D8854 /* wataiosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02854ED41B7FEB01004D8854 /* wataiosTests.swift */; };
 		02854EE01B7FEB01004D8854 /* wataiosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02854EDF1B7FEB01004D8854 /* wataiosUITests.swift */; };
-		43560CB3DA5ECECE26B5E6A3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 26F5FFB7449D6F40B24CC82A /* libPods.a */; };
+		02A3BB7F1B810042005D1B4A /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02A3BB7E1B810042005D1B4A /* SwiftyJSON.framework */; };
+		6E39B8552C21F87ACAB8610F /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF4E5629BE240F230C65E188 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,8 +49,9 @@
 		02854EDB1B7FEB01004D8854 /* wataiosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wataiosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		02854EDF1B7FEB01004D8854 /* wataiosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wataiosUITests.swift; sourceTree = "<group>"; };
 		02854EE11B7FEB01004D8854 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02A3BB7E1B810042005D1B4A /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "Pods/../build/Debug-iphoneos/SwiftyJSON.framework"; sourceTree = "<group>"; };
 		212B2B1DDE4812C7419174BD /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		26F5FFB7449D6F40B24CC82A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF4E5629BE240F230C65E188 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F254BF2214285D4370EBDD6E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -58,7 +60,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43560CB3DA5ECECE26B5E6A3 /* libPods.a in Frameworks */,
+				02A3BB7F1B810042005D1B4A /* SwiftyJSON.framework in Frameworks */,
+				6E39B8552C21F87ACAB8610F /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +147,8 @@
 		A423F5DF8130500355CC2C8C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				26F5FFB7449D6F40B24CC82A /* libPods.a */,
+				02A3BB7E1B810042005D1B4A /* SwiftyJSON.framework */,
+				CF4E5629BE240F230C65E188 /* Pods.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -161,6 +165,7 @@
 				02854EB91B7FEB01004D8854 /* Frameworks */,
 				02854EBA1B7FEB01004D8854 /* Resources */,
 				626F7C3319E93EF69A89FB7C /* Copy Pods Resources */,
+				F527EB525C924D186B666BFE /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -298,6 +303,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F527EB525C924D186B666BFE /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F90A76B372F7AFA902DBEF9D /* Check Pods Manifest.lock */ = {
@@ -465,6 +485,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = wataios/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -479,6 +503,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = wataios/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -6,17 +6,94 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "wataios/ViewController.swift"
-            timestampString = "461416401.312611"
+            timestampString = "461440560.17937"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
-            landmarkName = "startConnection()"
-            landmarkType = "5">
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "wataios.ViewController.data.getter : ObjectiveC.NSMutableData"
+                  moduleName = "wataios"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/buzzcrackle/Desktop/wata/wataios/wataios/ViewController.swift"
+                  timestampString = "461440817.931427"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "wataios.ViewController.data.getter : ObjectiveC.NSMutableData"
+                  moduleName = "wataios"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/buzzcrackle/Desktop/wata/wataios/wataios/ViewController.swift"
+                  timestampString = "461440817.931793"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "224">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "wataios.ViewController.data.setter : ObjectiveC.NSMutableData"
+                  moduleName = "wataios"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/buzzcrackle/Desktop/wata/wataios/wataios/ViewController.swift"
+                  timestampString = "461440817.932063"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "wataios.ViewController.init (wataios.ViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;ObjectiveC.NSBundle&gt;) -&gt; wataios.ViewController"
+                  moduleName = "wataios"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/buzzcrackle/Desktop/wata/wataios/wataios/ViewController.swift"
+                  timestampString = "461440817.932311"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "wataios.ViewController.init (wataios.ViewController.Type)(coder : ObjectiveC.NSCoder) -&gt; Swift.Optional&lt;wataios.ViewController&gt;"
+                  moduleName = "wataios"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/buzzcrackle/Desktop/wata/wataios/wataios/ViewController.swift"
+                  timestampString = "461440817.93259"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "40">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -26,13 +103,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "wataios/ViewController.swift"
-            timestampString = "461417065.885233"
+            timestampString = "461440560.17937"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "66"
-            endingLineNumber = "66"
-            landmarkName = "connectionDidFinishLoading(_:)"
-            landmarkType = "5">
+            startingLineNumber = "61"
+            endingLineNumber = "61">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -42,13 +117,25 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "wataios/ViewController.swift"
-            timestampString = "461417065.885233"
+            timestampString = "461440560.17937"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "61"
-            endingLineNumber = "61"
-            landmarkName = "connectionDidFinishLoading(_:)"
-            landmarkType = "5">
+            startingLineNumber = "80"
+            endingLineNumber = "80">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "wataios/ViewController.swift"
+            timestampString = "461440560.17937"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "73"
+            endingLineNumber = "73">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -58,12 +145,40 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "wataios/ViewController.swift"
-            timestampString = "461416961.611172"
+            timestampString = "461440560.17937"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "61"
-            endingLineNumber = "61"
-            landmarkName = "connectionDidFinishLoading(_:)"
+            startingLineNumber = "71"
+            endingLineNumber = "71">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "wataios/ViewController.swift"
+            timestampString = "461440560.17937"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "74"
+            endingLineNumber = "74">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "wataios/ViewController.swift"
+            timestampString = "461440560.17937"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "viewDidLoad()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -74,12 +189,26 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "wataios/ViewController.swift"
-            timestampString = "461417006.086317"
+            timestampString = "461440560.17937"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
-            landmarkName = "connectionDidFinishLoading(_:)"
+            startingLineNumber = "10"
+            endingLineNumber = "10">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "wataios/ViewController.swift"
+            timestampString = "461439642.13042"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "parseJSON(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
